@@ -5,18 +5,18 @@ Predict stock price of MAG-7 by building the LSTM neutral network on Keras frame
 Compare the outcomes when epoch is 10, 100, and 1,000 and plot the results.
 
 1. Extract historical price on Yahoo Finance using Selenium:
+
 ![Yahoo Finance](https://res.cloudinary.com/dfeirxlea/image/upload/v1733062828/portfolio/jcexczk8kzromghlhcss.png)
 
 
-2. Feed into LSTM network
+2. Compile and train the LSTM network:
+
 ![Terminal image](https://res.cloudinary.com/dfeirxlea/image/upload/v1733069463/portfolio/oetdaic97nn6pou9yvxl.png)
 
 
-3. The future stock price predicted (Plotted 3 patterns by epoch in red):
+3. The future stock price predicted (Plotted 3 patterns by epoch in red for each stock):
+
 ![Prediction](https://res.cloudinary.com/dfeirxlea/image/upload/v1733063005/portfolio/axw0aexisdafvu91c1m3.png)
-
-
-
 
 
 ## Table of Contents
@@ -50,9 +50,6 @@ Predict future stock price using LSTM networks.
 3. **Compile LSTM Network**:
    - Compile LSTM network using Keras Sequential framework with 5 dense layers
    - Train the network using datasets
-
-   ![Dense](img/model.png)
-
 
 4. **Stock Price Prediction**:
    - Visualize the results on graph. (Compare results by epoch = 10, 100, and 1,000)
@@ -92,7 +89,6 @@ Predict future stock price using LSTM networks.
 ├── utils/
 │   ├── web_scraper.py
 │   └── ext_analysis.py
-│ 
 └── sample_data/            # Store the scraped dataset 
 └── requirements.txt
 ```
@@ -155,6 +151,13 @@ Predict future stock price using LSTM networks.
    pipenv install -r requirements.txt -v
    ```
 
+### Customizing LSTM Network
+
+To customize LSTM, edit the `main.py` file.
+
+### Adding EDA
+
+To add more EDA, edit the `ext_analysis.py` file.
 
 
 ## Contributing

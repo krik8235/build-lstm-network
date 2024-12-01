@@ -161,4 +161,4 @@ cython_debug/
 #.idea/
 test.py
 sample_data/
-
+image/
